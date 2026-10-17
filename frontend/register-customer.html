@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration - TrustFix</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">🔧 TrustFix</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Registration Form -->
+    <div class="form-container" style="max-width: 600px;">
+        <h2 class="text-center mb-2">Customer Registration</h2>
+        <p class="text-center mb-2" style="color: var(--text-light);">Create your account to book trusted professionals</p>
+
+        <div id="alertBox" class="hidden"></div>
+
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="full_name">Full Name *</label>
+                <input type="text" id="full_name" name="full_name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone_number">Phone Number *</label>
+                <input type="tel" id="phone_number" name="phone_number" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password *</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address *</label>
+                <textarea id="address" name="address" placeholder="Enter your full address" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="city">City *</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Register</button>
+        </form>
+
+        <p class="text-center mt-2">
+            Already have an account?
+            <a href="login.html" style="color: var(--primary-color); font-weight: 600;">Login here</a>
+        </p>
+
+        <p class="text-center mt-1">
+            Want to offer services?
+            <a href="register-provider.html" style="color: var(--secondary-color); font-weight: 600;">Register as Provider</a>
+        </p>
+    </div>
+
+    <script src="js/register-customer.js"></script>
+</body>
+</html>

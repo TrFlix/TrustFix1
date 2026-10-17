@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TrustFix</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">🔧 TrustFix</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register-customer.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="form-container">
+        <h2 class="text-center mb-2">Login to TrustFix</h2>
+        <p class="text-center mb-2" style="color: var(--text-light);">Welcome back! Please login to your account</p>
+
+        <div id="alertBox" class="hidden"></div>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="role">Login As</label>
+                <select id="role" name="role" required>
+                    <option value="">Select Role</option>
+                    <option value="customer">Customer</option>
+                    <option value="provider">Service Provider</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+        </form>
+
+        <p class="text-center mt-2">
+            Don't have an account?
+            <a href="register-customer.html" style="color: var(--primary-color); font-weight: 600;">Sign up as Customer</a> or
+            <a href="register-provider.html" style="color: var(--primary-color); font-weight: 600;">Register as Provider</a>
+        </p>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
